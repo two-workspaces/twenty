@@ -32,8 +32,8 @@ Service map:
 
 | Service | Image | Role |
 |---|---|---|
-| server | `twentycrm/twenty:v2.50.1` | API + web app, public domain, healthcheck `/healthz`, runs migrations |
-| worker | `twentycrm/twenty:v2.50.1` (CMD `yarn worker:prod`, after the server finishes upgrading the database) | BullMQ jobs: emails, imports, workflows |
+| server | `twentycrm/twenty:v2.51.0` | API + web app, public domain, healthcheck `/healthz`, runs migrations |
+| worker | `twentycrm/twenty:v2.51.0` (CMD `yarn worker:prod`, after the server finishes upgrading the database) | BullMQ jobs: emails, imports, workflows |
 | postgres | `postgres:16-alpine` | Database (`default`), on a volume |
 | redis | `redis:7-alpine` | BullMQ queues (`noeviction`, append-only, on a volume) |
 
